@@ -11,7 +11,7 @@ struct PopularMovie: Codable, Identifiable {
     let id: Int
     let originalTitle: String
     let overview: String
-    let rating: Int
+    let rating: Double
     let posterPath: String
     /// Better for landscape images
     let backdropPath: String
