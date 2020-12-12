@@ -58,10 +58,10 @@
 		230D534425854C890013796A /* MovieUI */ = {
 			isa = PBXGroup;
 			children = (
-				230D5369258551720013796A /* Keys */,
-				230D535D25854E9C0013796A /* Main */,
 				230D535C25854E980013796A /* Models */,
 				230D535B25854E920013796A /* Views */,
+				230D535D25854E9C0013796A /* App */,
+				230D5369258551720013796A /* Keys */,
 				230D535A25854D6D0013796A /* Resources */,
 				230D534B25854C8A0013796A /* Assets.xcassets */,
 				230D535025854C8A0013796A /* LaunchScreen.storyboard */,
@@ -102,12 +102,12 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		230D535D25854E9C0013796A /* Main */ = {
+		230D535D25854E9C0013796A /* App */ = {
 			isa = PBXGroup;
 			children = (
 				230D534925854C890013796A /* ContentView.swift */,
 			);
-			path = Main;
+			path = App;
 			sourceTree = "<group>";
 		};
 		230D5369258551720013796A /* Keys */ = {
