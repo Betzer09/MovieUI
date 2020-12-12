@@ -67,8 +67,14 @@ class APIManager {
         }).resume()
     }
     
-    private func buildDefaultComponents() -> URLComponents {
-        var components = URLComponents(string: APIManager.baseURL)!
+    /**
+     Builds the default components for a route
+     
+     parameter path: The path to the route, be sure to start with a forward "/"
+     */
+    
+    public func buildDefaultComponents(path: String) -> URLComponents {
+        var components = URLComponents(string: APIManager.baseURL + path)!
         let apiItem = URLQueryItem(name: "api_key", value: apiKey)
         let regionItem = URLQueryItem(name: "region", value: APIManager.region)
         components.queryItems = [apiItem, regionItem]

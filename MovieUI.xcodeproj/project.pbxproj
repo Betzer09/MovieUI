@@ -17,6 +17,7 @@
 		230D5372258557730013796A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 230D5371258557730013796A /* SDWebImageSwiftUI */; };
 		230D5376258558000013796A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D5375258558000013796A /* APIManager.swift */; };
 		230D537B25855BCE0013796A /* APIManager+Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D537A25855BCE0013796A /* APIManager+Popular.swift */; };
+		230D5380258561AD0013796A /* PopularMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D537F258561AD0013796A /* PopularMovie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		230D536A258551790013796A /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		230D5375258558000013796A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		230D537A25855BCE0013796A /* APIManager+Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIManager+Popular.swift"; sourceTree = "<group>"; };
+		230D537F258561AD0013796A /* PopularMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMovie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		230D535C25854E980013796A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				230D537F258561AD0013796A /* PopularMovie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			files = (
 				230D5376258558000013796A /* APIManager.swift in Sources */,
 				230D534625854C890013796A /* AppDelegate.swift in Sources */,
+				230D5380258561AD0013796A /* PopularMovie.swift in Sources */,
 				230D534825854C890013796A /* SceneDelegate.swift in Sources */,
 				230D534A25854C890013796A /* ContentView.swift in Sources */,
 				230D537B25855BCE0013796A /* APIManager+Popular.swift in Sources */,
