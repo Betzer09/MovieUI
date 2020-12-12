@@ -9,7 +9,12 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Home View")
+        VStack(spacing: 20) {
+            Text("Welcome to MovieUI")
+                .multilineTextAlignment(.leading)
+            
+            Spacer()
+        }
     }
 }
 
