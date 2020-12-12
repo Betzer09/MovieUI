@@ -13,6 +13,7 @@
 		230D534C25854C8A0013796A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 230D534B25854C8A0013796A /* Assets.xcassets */; };
 		230D534F25854C8A0013796A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 230D534E25854C8A0013796A /* Preview Assets.xcassets */; };
 		230D535225854C8A0013796A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 230D535025854C8A0013796A /* LaunchScreen.storyboard */; };
+		230D536B258551790013796A /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 230D536A258551790013796A /* Keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		230D534E25854C8A0013796A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		230D535125854C8A0013796A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		230D535325854C8A0013796A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		230D536A258551790013796A /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		230D534425854C890013796A /* MovieUI */ = {
 			isa = PBXGroup;
 			children = (
+				230D5369258551720013796A /* Keys */,
 				230D535D25854E9C0013796A /* Main */,
 				230D535C25854E980013796A /* Models */,
 				230D535B25854E920013796A /* Views */,
@@ -105,6 +108,14 @@
 				230D534925854C890013796A /* ContentView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		230D5369258551720013796A /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				230D536A258551790013796A /* Keys.plist */,
+			);
+			path = Keys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				230D536B258551790013796A /* Keys.plist in Resources */,
 				230D535225854C8A0013796A /* LaunchScreen.storyboard in Resources */,
 				230D534F25854C8A0013796A /* Preview Assets.xcassets in Resources */,
 				230D534C25854C8A0013796A /* Assets.xcassets in Resources */,
