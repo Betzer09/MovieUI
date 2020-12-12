@@ -16,6 +16,7 @@
 		230D536B258551790013796A /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 230D536A258551790013796A /* Keys.plist */; };
 		230D5372258557730013796A /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 230D5371258557730013796A /* SDWebImageSwiftUI */; };
 		230D5376258558000013796A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D5375258558000013796A /* APIManager.swift */; };
+		230D537B25855BCE0013796A /* APIManager+Popular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D537A25855BCE0013796A /* APIManager+Popular.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		230D535325854C8A0013796A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		230D536A258551790013796A /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		230D5375258558000013796A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		230D537A25855BCE0013796A /* APIManager+Popular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIManager+Popular.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +64,8 @@
 		230D534425854C890013796A /* MovieUI */ = {
 			isa = PBXGroup;
 			children = (
-				230D5374258557E20013796A /* APIManager */,
 				230D535C25854E980013796A /* Models */,
+				230D5374258557E20013796A /* APIManager */,
 				230D535B25854E920013796A /* Views */,
 				230D535D25854E9C0013796A /* App */,
 				230D5369258551720013796A /* Keys */,
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				230D5375258558000013796A /* APIManager.swift */,
+				230D537A25855BCE0013796A /* APIManager+Popular.swift */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				230D534625854C890013796A /* AppDelegate.swift in Sources */,
 				230D534825854C890013796A /* SceneDelegate.swift in Sources */,
 				230D534A25854C890013796A /* ContentView.swift in Sources */,
+				230D537B25855BCE0013796A /* APIManager+Popular.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +359,7 @@
 				DEVELOPMENT_TEAM = RE524LJXV2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MovieUI/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -376,6 +381,7 @@
 				DEVELOPMENT_TEAM = RE524LJXV2;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MovieUI/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

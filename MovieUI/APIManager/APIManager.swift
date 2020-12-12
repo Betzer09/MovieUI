@@ -8,11 +8,18 @@
 import Foundation
 
 class APIManager {
-    static private var baseURL = "https://api.themoviedb.org/3/"
+    static private let baseURL = "https://api.themoviedb.org/3/"
+    static private let region = "US"
     
+    private var apiKey: String = ""
     
+    static let shared = APIManager()
     
-    public func loadDataWith<T: Decodable>(request: URLRequest, completion: @escaping(Result<T, Error>) -> () ) {
+    public func loadDataWith<T: Decodable>(url: URL, completion: @escaping(Result<T, Error>) -> () ) {
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        
         URLSession.shared.dataTask(with: request, completionHandler: { (data, _, error) in
             if let error = error {
                 DispatchQueue.main.async {
@@ -58,6 +65,27 @@ class APIManager {
             }
             
         }).resume()
+    }
+    
+    private func buildDefaultComponents() -> URLComponents {
+        var components = URLComponents(string: APIManager.baseURL)!
+        let apiItem = URLQueryItem(name: "api_key", value: apiKey)
+        let regionItem = URLQueryItem(name: "region", value: APIManager.region)
+        components.queryItems = [apiItem, regionItem]
+        return components
+        
+    }
+    
+    public func loadAPIKey() {
+        guard let url = Bundle.main.url(forResource: "Keys", withExtension: "plist"),
+           let xml = try? Data(contentsOf: url) ,
+           let data = try? PropertyListSerialization.propertyList(from: xml, options: .mutableContainersAndLeaves, format: nil) as? [String: Any],
+           let apiKey = data["Movie_DB_Key"] as? String else {
+            assert(true, "Unable to load API Key!")
+            return
+        }
+        
+        self.apiKey = apiKey
     }
     
 }
