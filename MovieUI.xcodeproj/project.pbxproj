@@ -56,13 +56,12 @@
 		230D534425854C890013796A /* MovieUI */ = {
 			isa = PBXGroup;
 			children = (
+				230D535D25854E9C0013796A /* Main */,
+				230D535C25854E980013796A /* Models */,
+				230D535B25854E920013796A /* Views */,
 				230D535A25854D6D0013796A /* Resources */,
-				230D534525854C890013796A /* AppDelegate.swift */,
-				230D534725854C890013796A /* SceneDelegate.swift */,
-				230D534925854C890013796A /* ContentView.swift */,
 				230D534B25854C8A0013796A /* Assets.xcassets */,
 				230D535025854C8A0013796A /* LaunchScreen.storyboard */,
-				230D535325854C8A0013796A /* Info.plist */,
 				230D534D25854C8A0013796A /* Preview Content */,
 			);
 			path = MovieUI;
@@ -79,8 +78,33 @@
 		230D535A25854D6D0013796A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				230D534525854C890013796A /* AppDelegate.swift */,
+				230D534725854C890013796A /* SceneDelegate.swift */,
+				230D535325854C8A0013796A /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		230D535B25854E920013796A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		230D535C25854E980013796A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		230D535D25854E9C0013796A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				230D534925854C890013796A /* ContentView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,7 +322,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MovieUI/Preview Content\"";
 				DEVELOPMENT_TEAM = RE524LJXV2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = MovieUI/Info.plist;
+				INFOPLIST_FILE = MovieUI/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +343,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MovieUI/Preview Content\"";
 				DEVELOPMENT_TEAM = RE524LJXV2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = MovieUI/Info.plist;
+				INFOPLIST_FILE = MovieUI/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
