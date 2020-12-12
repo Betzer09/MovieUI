@@ -22,6 +22,7 @@
 		230D5389258565E50013796A /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D5388258565E50013796A /* CategoriesView.swift */; };
 		230D538D2585661A0013796A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D538C2585661A0013796A /* ProfileView.swift */; };
 		230D5391258566680013796A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D5390258566680013796A /* MainTabView.swift */; };
+		230D539625856A580013796A /* FeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D539525856A580013796A /* FeaturedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		230D5388258565E50013796A /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		230D538C2585661A0013796A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		230D5390258566680013796A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		230D539525856A580013796A /* FeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		230D535B25854E920013796A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				230D539525856A580013796A /* FeaturedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				230D534625854C890013796A /* AppDelegate.swift in Sources */,
 				230D5380258561AD0013796A /* PopularMovie.swift in Sources */,
 				230D534825854C890013796A /* SceneDelegate.swift in Sources */,
+				230D539625856A580013796A /* FeaturedView.swift in Sources */,
 				230D534A25854C890013796A /* ContentView.swift in Sources */,
 				230D537B25855BCE0013796A /* APIManager+Popular.swift in Sources */,
 				230D5391258566680013796A /* MainTabView.swift in Sources */,

@@ -13,6 +13,8 @@ struct PopularMovie: Codable, Identifiable {
     let overview: String
     let rating: Int
     let posterPath: String
+    /// Better for landscape images
+    let backdropPath: String
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -20,5 +22,6 @@ struct PopularMovie: Codable, Identifiable {
         case overview
         case rating = "vote_average"
         case posterPath = "poster_path"
+        case backdropPath = "backdrop_path"
     }
 }
